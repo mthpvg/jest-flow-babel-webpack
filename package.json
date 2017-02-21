@@ -1,0 +1,40 @@
+{
+  "name": "jest-flow-babel-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --config static/webpack/config.js --inline --content-base bin/",
+    "build": "webpack --display-error-details --config static/webpack/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthpvg/jest-flow-babel-webpack.git"
+  },
+  "keywords": [
+    "flow",
+    "webpack"
+  ],
+  "author": "mthpvg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mthpvg/jest-flow-babel-webpack/issues"
+  },
+  "homepage": "https://github.com/mthpvg/jest-flow-babel-webpack#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "html-webpack-plugin": "^2.26.0",
+    "jest-cli": "^19.0.0",
+    "openpack": "^1.0.0",
+    "pug": "^2.0.0-beta9",
+    "pug-loader": "^2.3.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0",
+    "webpack-merge": "^2.6.0"
+  }
+}
