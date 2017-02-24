@@ -1,20 +1,19 @@
-var path = require('path');
-var webpack = require('webpack');
-
+const path = require('path');
+const webpack = require('webpack');
 
 
 module.exports = {
   output: {
     path: path.resolve(__dirname, '../bin'),
-    filename: '[name].[hash].bundle.js'
+    filename: '[name].[hash].bundle.js',
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
-        warnings: false
+        warnings: false,
       },
-      sourceMap: false
-    })
-  ]
+      sourceMap: false,
+    }),
+  ],
 };
