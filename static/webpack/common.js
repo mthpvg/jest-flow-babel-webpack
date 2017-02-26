@@ -4,22 +4,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, '../src/app.js'),
+    app: path.resolve(__dirname, '../src/app.jsx'),
   },
   resolve: {
-    extensions: ['.js', 'json'],
+    extensions: ['.js', 'json', '.jsx'],
   },
   module: {
     rules: [
       {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        include: [path.resolve(__dirname, '../src')],
+      },
+      {
         test: /\.pug$/,
         loader: 'pug-loader',
         include: [path.resolve(__dirname, '../src/views')],
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        include: [path.resolve(__dirname, '../src')],
       },
     ],
   },

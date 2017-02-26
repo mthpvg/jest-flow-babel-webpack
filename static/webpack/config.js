@@ -4,6 +4,7 @@ const prod = require('./prod');
 const dev = require('./dev');
 const merge = require('webpack-merge');
 
+
 switch (TARGET) {
   case 'build':
     module.exports = merge(common, prod);

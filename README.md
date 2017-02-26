@@ -26,3 +26,8 @@ flow init
       "javascript.validate.enable": false
   }
   ```
+
+## TODO
+- jest for react component
+- test watch
+- hot reloading
